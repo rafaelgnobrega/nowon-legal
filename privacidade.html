@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Política de Privacidade | Nowon</title>
+<style>
+  :root {
+    --orange: #FF8A00;
+    --purple: #8000FF;
+    --navy: #1B2559;
+    --text: #340068;
+    --gray: #6E6E6E;
+    --bg: #F4F4F4;
+    --surface: #FFFFFF;
+    --border: #E6E6E6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    background: var(--orange);
+    color: var(--navy);
+    padding: 32px 20px;
+    text-align: center;
+  }
+  header h1 { margin: 0; font-size: 22px; }
+  header p { margin: 6px 0 0; font-size: 13px; opacity: 0.85; }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 20px 60px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 16px;
+  }
+  h2 {
+    color: var(--navy);
+    font-size: 17px;
+    margin: 0 0 10px;
+  }
+  p, li { color: var(--text); font-size: 14px; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  .muted { color: var(--gray); font-size: 13px; }
+  .updated { text-align: center; margin-top: 24px; }
+  a { color: var(--purple); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Política de Privacidade do Nowon</h1>
+  <p>Última atualização: 2 de outubro de 2026</p>
+</header>
+<main>
+  <div class="card">
+    <h2>1. Quem somos</h2>
+    <p>O Nowon é um aplicativo de descoberta de experiências urbanas em tempo real. Mostra o que está
+    acontecendo perto de você agora (estabelecimentos abertos, eventos ao vivo, ocupação dos locais).
+    Este documento explica quais dados coletamos, por quê, e quais são os seus direitos como titular,
+    conforme a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018).</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Dados que coletamos</h2>
+    <p><strong>Dados de conta:</strong> nome, e-mail, foto de perfil, data de nascimento, nome de
+    usuário (@). Se você entra com Google, Facebook ou Apple, recebemos nome, e-mail e foto da sua
+    conta nesses serviços, conforme as permissões que você autorizar na hora do login.</p>
+    <p><strong>Verificação de identidade:</strong> CPF (pessoa física) ou CNPJ (conta empresarial),
+    guardados de forma criptografada, nunca ficam visíveis em texto simples, nem pra nós.</p>
+    <p><strong>Localização:</strong> sua localização aproximada ou exata (conforme a permissão que
+    você conceder ao sistema operacional), usada pra mostrar lugares/eventos perto de você e pra
+    validar relatos de ocupação de um local (confirmando que você está fisicamente perto antes de
+    aceitar seu relato).</p>
+    <p><strong>Conteúdo que você envia:</strong> fotos de perfil, de estabelecimentos e de eventos que
+    você cadastra; endereços salvos; interesses marcados; avaliações de ocupação.</p>
+    <p><strong>Dados de uso e social:</strong> quem você segue, favoritos, convites enviados/recebidos,
+    grupos criados.</p>
+    <p><strong>Notificações:</strong> um token técnico do seu aparelho, usado só pra enviar notificações
+    push (ex.: convite pra evento, evento perto de você).</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Por que coletamos (finalidade)</h2>
+    <ul>
+      <li>Criar e manter sua conta, e autenticar você no app.</li>
+      <li>Mostrar estabelecimentos e eventos relevantes perto de você.</li>
+      <li>Verificar identidade (CPF) e, pra contas empresariais, confirmar que o CNPJ existe e está
+      ativo na Receita Federal antes de liberar a criação de eventos: proteção contra fraude e contas
+      falsas.</li>
+      <li>Viabilizar a camada social (amigos, convites, grupos, visibilidade de eventos privados).</li>
+      <li>Enviar notificações que você optou por receber.</li>
+      <li>Cumprir obrigações legais e responder a autoridades quando exigido por lei.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4. Com quem compartilhamos</h2>
+    <p>Não vendemos seus dados. Compartilhamos dados apenas com prestadores de serviço que processam
+    dados em nosso nome (operadores, na definição da LGPD):</p>
+    <ul>
+      <li><strong>Supabase</strong>: banco de dados, autenticação e armazenamento de arquivos.</li>
+      <li><strong>Google, Facebook e Apple</strong>: somente se você optar por entrar com uma dessas
+      contas (login social).</li>
+      <li><strong>BrasilAPI / Receita Federal</strong>: consulta pública de CNPJ, só pra confirmar que
+      uma empresa existe e está ativa (não enviamos seu CPF a esse serviço).</li>
+      <li><strong>RevenueCat</strong>: gestão de assinaturas, se e quando o app tiver recursos pagos.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5. Como protegemos seus dados</h2>
+    <p>CPF e CNPJ são armazenados de forma criptografada (nunca em texto simples). O acesso aos dados no
+    banco é restrito por regras de segurança em nível de linha (Row Level Security), que garantem que
+    cada pessoa só acessa os próprios dados, ou dados que você mesmo tornou públicos (ex.: perfil,
+    eventos públicos).</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Seus direitos (LGPD)</h2>
+    <p>Você pode, a qualquer momento, direto no app:</p>
+    <ul>
+      <li><strong>Exportar seus dados</strong>: Conta → Exportar meus dados.</li>
+      <li><strong>Excluir sua conta</strong>: Conta → Excluir conta (exclusão definitiva, incluindo
+      dados associados).</li>
+      <li><strong>Corrigir seus dados</strong>: editando seu perfil diretamente no app.</li>
+    </ul>
+    <p>Você também pode solicitar esclarecimentos, revogar consentimentos ou exercer qualquer outro
+    direito previsto na LGPD entrando em contato pelo e-mail abaixo.</p>
+  </div>
+
+  <div class="card">
+    <h2>7. Retenção</h2>
+    <p>Mantemos seus dados enquanto sua conta estiver ativa. Ao excluir a conta, os dados associados são
+    removidos permanentemente, exceto quando a lei exigir retenção por período específico (ex.: obrigações
+    fiscais ou regulatórias).</p>
+  </div>
+
+  <div class="card">
+    <h2>8. Contato</h2>
+    <p>Dúvidas sobre esta política ou sobre seus dados: <strong>nowonevent@gmail.com</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2>9. Alterações nesta política</h2>
+    <p>Podemos atualizar esta política conforme o app evolui. Mudanças relevantes serão avisadas dentro
+    do próprio app.</p>
+  </div>
+
+  <p class="muted updated">Nowon, Santos/SP, Brasil.</p>
+</main>
+</body>
+</html>
